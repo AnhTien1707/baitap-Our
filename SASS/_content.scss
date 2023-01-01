@@ -1,0 +1,225 @@
+
+.content__wrapper{
+    background:url(../img/yellow_top_wave_01.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+.content__our{
+    padding: 60px 30px;
+    background: url(../img/Violet_top_left_wave.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    .aboutUs{
+        @media screen and (max-width:992px){
+            padding-top: 50px;
+        }
+        h4{
+            font-size: 17px;
+            color: $primary-color;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 58px;
+            color: black;
+            font-weight: 700;
+            @media screen and (max-width:992px){
+                font-size: 50px;
+            }
+        }
+    }
+    .aboutUs_img{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            @media screen and (max-width:992px){
+                width: auto;
+            }
+            @media (max-width: 740px){
+                width: auto;
+            }
+        }
+    }
+}
+
+.content__card{
+    padding-top: 30px;
+    background-color: #dcd1f3;
+    .card{
+        @media screen and (max-width:992px) {
+            margin: 0px auto 30px auto;
+            width: 31.5rem!important;
+        }
+        @media screen and (max-width:740px){
+            width: 24rem!important;
+        }
+        margin-bottom: 40px;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.5s;
+        &:hover{
+            box-shadow:1px 1px 5px 1px #999;
+            .card-img-top{
+                transform: scale3d(1.05,1.05,1.05);
+            }
+        }
+        .card-img-top{
+            width: 100%;
+            height: auto;
+            transition: all 0.5s;
+            transform: scale3d(1,1,1);
+        }
+        .card-body{
+            background-color: white;
+            text-align: center;
+            .card-title{
+                color: $primary-color;
+                font-size: $fs;
+                margin-bottom: 6px;
+            }
+            h2{
+                font-weight: $fw-3;
+                font-size: 24px;
+                margin-bottom: 18px;
+            }
+
+            .card-text{
+                font-weight: 500;
+                line-height: 1.8;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+.content__background{
+    background: url(../img/Wave_White_bottom_right_shape_01.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content__contact{
+    background: url(../img/accent_bottom_wave_01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 60px;
+    .contact-img{
+        width: 100%;
+        height: auto;
+        @media screen and (max-width:992px){
+            width: auto;
+            padding-top: 50px;
+            padding-left: 40px;
+        }
+        
+    }
+    .contact-name{
+        margin-right: 20px;
+        position: relative;
+        .name-input{
+            
+            input{
+                border-radius: 50px;
+                padding: 20px 30px;
+                font-size: 12px;
+            }
+        }
+        .name-icon{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: $primary-color;
+        }
+    }
+    .contact-email{
+        position: relative;
+        .email-input{
+            input{
+                padding: 20px 30px;
+                border-radius: 50px;
+                font-size: 12px;
+            }
+        }
+        .email-icon{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: $primary-color;
+            z-index: 10;
+        }
+    }
+}
+
+form{
+    padding: 0px 30px;
+    box-shadow:1px 1px 5px 1px #999;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    @media screen and (max-width:992px){
+        width: auto;
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 38px;
+        font-weight: $fw-3;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        @media screen and (max-width:992px){
+            text-align: left!important;
+        }
+    }
+    .form-control{
+        position: relative;
+        padding-left: 30px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .control-icon{
+        position: absolute;
+        left:54px;
+        color: $primary-color;
+    }
+    .form-textarea {
+        position: relative;
+        margin-bottom: 40px;
+        .form-control-textarea{
+            padding-left: 36px;
+            border-radius: 10px;
+        }
+    }
+    .textarea-icon{
+        color: $primary-color;
+        position: absolute;
+        top: 202px;
+        left: 54px;
+        @media screen and (max-width:992px){
+            top: 242px;
+            left: 56px; 
+        }
+    }
+    .btn-form{
+        color: white;
+        background-color: $primary-color;
+        display: inline-block;
+        padding: 14px 54px;
+        border-radius: 50px;
+        font-size: $fs;
+        font-weight: 600;
+        margin-bottom: 60px;
+        border: 1px solid $primary-color;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        &:hover{
+            text-decoration: none;
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}

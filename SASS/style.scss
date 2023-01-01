@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "./variable";
+@import "./reponsive";
+@import "./header";
+@import "./content";
+@import "./footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+:root {
+    --animate-duration: 2s!important;
+  }
+.container--px{
+    padding: 0px 30px;
+}
+
+.container--half{
+    max-width: 950px;
+    margin: auto;
+}
+
+
+

@@ -1,0 +1,129 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 9999;
+  .navbar_header {
+    padding: 0px 20px;
+    .header_logo {
+      img {
+        width: 80px;
+      }
+    }
+    ul {
+      .nav-item {
+        padding-left: 40px;
+        .nav-link {
+          color: black;
+          font-size: $fs;
+          font-weight: 600;
+          transition: all 0.5s;
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            pointer-events: none;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            transition: all 0.2s;
+            position: absolute;
+            left: 20px;
+            bottom: -28px;
+            transition: all 0.4s;
+            transform: scale(0);
+          }
+          &:hover {
+            color: $primary-color;
+          }
+          &:hover::after{
+           transform:scale(1.4);
+          }
+
+        }
+      }
+      .active{
+        .nav-link{
+            &::after{
+                transform:scale(1);
+            }
+        }
+    }
+    }
+  }
+}
+
+.nav-overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.nav-phone {
+  .nav-link-phone {
+    background-color: $primary-color;
+    color: white!important;
+    border-radius: 50px;
+    padding: 12px 20px !important;
+    display: inline-block;
+    border: 1px solid $primary-color;
+    transition: all 0.5s;
+    &:hover {
+      background-color: white;
+      color: $primary-color!important;
+      text-decoration: none;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+.navbar-item-social {
+  align-items: center;
+  margin-left: 10px;
+  a {
+    transition: all 0.5s;
+    padding: 0px 6px !important;
+    color: black;
+    
+    i {
+      font-size: 14px;
+    }
+  }
+  a:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.navbar__mobile{
+  justify-content: left!important;
+  align-items: center;
+  padding: 0px 16px!important;
+  .navbar-btn-mobile{
+    .navbar-toggler-icon{
+      display: inline;
+      background: none;
+      i{
+        color: black;
+        font-weight: 600;
+        font-size: 30px;
+      }
+    }
+  }
+  .navbar-brand-mobile{
+    img{
+      height: 48px;
+      width: auto;
+    }
+  }
+}
+
